@@ -38,8 +38,8 @@
 <body>
   <header class="bg-slate-100 bg-cover">
 
-    <nav class=" px-6 md:px-20 lg:px-32 py-6">
-      <div class="navbar border-2 rounded-full p-3 ">
+    <nav class=" px-6 md:px-20 lg:px-32 py-6 z-50">
+      <div class="navbar border-2 bg-white rounded-full p-3 ">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn border-2 border-gray-300 btn-ghost lg:hidden">
@@ -72,8 +72,8 @@
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 items-center">
-            <div class="form-control flex flex-row justify-center items-center rounded-full bg-white px-4">
-              <input type="text" placeholder="Search" class="flex-grow py-2 border-none outline-none w-24 md:w-auto" />
+            <div class="form-control flex flex-row justify-center items-center rounded-full bg-slate-200 px-4">
+              <input type="text" placeholder="Search" class="flex-grow py-2 bg-transparent border-none outline-none w-24 md:w-auto" />
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             <li><a>Blog</a></li>
@@ -99,12 +99,11 @@
 
     </nav>
     <div class="px-6 md:px-20 lg:px-32 z-0 pb-6">
-      <div class="bg-[url('./images/banner-1.svg')] px-10 py-20 bg-rose-500 rounded-xl">
-        <div class="mix-blend-multiply bg-black text-center p-5 text-white rounded-xl">
+      <div class="bg-[url('./images/bg-head.jpg')] bg-cover px-10 py-20 rounded-xl">
+        <div class="mix-blend-multiply bg-[#0000006c] text-center p-5 text-white rounded-xl">
           <h1 class="font-extrabold text-4xl">Welcome to </h1>
           <h1 class="font-extrabold text-4xl">E-School</h1>
-          <p class="font-normal text-xl ">E-school is a cutting-edge online educational platform committed to providing
-            accessible and high-quality learning experiences</p>
+          <p class="font-normal text-xl ">দেশব্যাপী E-School এর সকল শাখায় সমান সেবা প্রদান করা হয়। অভিন্ন প্রশ্নপত্রে সকল শাখায় পরীক্ষা নেওয়া হয়। সকল উত্তরপত্র মূল্যায়ন করা হয় এক জায়গা থেকে এবং একই Solve Sheet সকল শিক্ষার্থীকে প্রদান করা হয়। একই টিচার সকল শাখায় ঘুরে ঘুরে ক্লাস নিয়ে থাকেন। অনলাইন Software-এর মাধ্যমে সকল শিক্ষার্থীর মেধাতালিকা প্রণয়ন করা হয়। ফলে একজন শিক্ষার্থী উদ্ভাস-উন্মেষ এর যেকোনো শাখা থেকে পরীক্ষা দিয়েই দেশব্যাপী সকল শিক্ষার্থীর মধ্যে নিজের অবস্থান সম্পর্কে জানতে পারে।</p>
         </div>
       </div>
 
@@ -112,8 +111,46 @@
 
 
   </header>
+
   <main>
+
+    <!-- carusal section -->
+
+    <section class="px-5 flex justify-center sm:w-full  md:px-8 lg:px-32 ">
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- course section -->
+
     <section class="px-5 flex justify-center sm:w-full  md:px-8 lg:px-32 ">
       <div>
         <div
@@ -154,7 +191,7 @@
           </div>
           <div
             class="card hover:shadow-none hover:bg-[#9b9b9b1b] p-6 flex flex-col gap-4 bg-base-100 shadow-xl rounded-2xl border border-solid border-gray-400">
-            <figure><img class="w-full rounded-2xl" src="./Images/SSC24FMTPO.webp" alt="shirt" /></figure>
+            <figure><img class="w-full rounded-2xl" src="./images/SSC24FMTPO.webp" alt="shirt" /></figure>
             <div class="card-body p-0 w-full">
               <div class="flex items-center sm:gap-0 text-base"><i class="fa-solid fa-star text-[#F99808]"></i>
                 <p>5.1k</p><i class="fa-regular fa-eye"></i>
@@ -181,7 +218,7 @@
           </div>
           <div
             class="card hover:shadow-none hover:bg-[#9b9b9b1b] p-6 flex flex-col gap-4 bg-base-100 shadow-xl rounded-2xl border border-solid border-gray-400">
-            <figure><img class="w-full rounded-2xl" src="./Images/SSC24FMTPO.webp" alt="shirt" /></figure>
+            <figure><img class="w-full rounded-2xl" src="./images/SSC24FMTPO.webp" alt="shirt" /></figure>
             <div class="card-body p-0 w-full">
               <div class="flex items-center sm:gap-0 text-base"><i class="fa-solid fa-star text-[#F99808]"></i>
                 <p>5.1k</p><i class="fa-regular fa-eye"></i>
@@ -208,7 +245,7 @@
           </div>
           <div
             class="card hover:shadow-none hover:bg-[#9b9b9b1b] p-6 flex flex-col gap-4 bg-base-100 shadow-xl rounded-2xl border border-solid border-gray-400">
-            <figure><img class="w-full rounded-2xl" src="./Images/SSC24FMTPO.webp" alt="shirt" /></figure>
+            <figure><img class="w-full rounded-2xl" src="./images/SSC24FMTPO.webp" alt="shirt" /></figure>
             <div class="card-body p-0 w-full">
               <div class="flex items-center sm:gap-0 text-base"><i class="fa-solid fa-star text-[#F99808]"></i>
                 <p>5.1k</p><i class="fa-regular fa-eye"></i>
@@ -235,7 +272,7 @@
           </div>
           <div
             class="card hover:shadow-none hover:bg-[#9b9b9b1b] p-6 flex flex-col gap-4 bg-base-100 shadow-xl rounded-2xl border border-solid border-gray-400">
-            <figure><img class="w-full rounded-2xl" src="./Images/SSC24FMTPO.webp" alt="shirt" /></figure>
+            <figure><img class="w-full rounded-2xl" src="./images/SSC24FMTPO.webp" alt="shirt" /></figure>
             <div class="card-body p-0 w-full">
               <div class="flex items-center sm:gap-0 text-base"><i class="fa-solid fa-star text-[#F99808]"></i>
                 <p>5.1k</p><i class="fa-regular fa-eye"></i>
@@ -262,7 +299,7 @@
           </div>
           <div
             class="card hover:shadow-none hover:bg-[#9b9b9b1b] p-6 flex flex-col gap-4 bg-base-100 shadow-xl rounded-2xl border border-solid border-gray-400">
-            <figure><img class="w-full rounded-2xl" src="./Images/SSC24FMTPO.webp" alt="shirt" /></figure>
+            <figure><img class="w-full rounded-2xl" src="./images/SSC24FMTPO.webp" alt="shirt" /></figure>
             <div class="card-body p-0 w-full">
               <div class="flex items-center sm:gap-0 text-base"><i class="fa-solid fa-star text-[#F99808]"></i>
                 <p>5.1k</p><i class="fa-regular fa-eye"></i>
@@ -289,9 +326,11 @@
           </div>
 
     </section>
+
   </main>
+
   <footer
-    class="footer mt-6 py-12 lg-p-10 md:p-6 p-4   bg-[#2F2E41] text-white text-base-content lg:place-items-start place-items-center">
+    class="footer mt-6 py-12 lg-p-10 md:p-6 p-4   bg-[#2F2E41] text-white text-base-content place-items-center">
     <nav class="lg:place-items-start place-items-center">
       <h6 class="footer-title">Services</h6>
       <a class="link link-hover">Branding</a>
@@ -316,10 +355,10 @@
       <h6 class="footer-title">Newsletter</h6>
       <fieldset class="form-control w-80">
         <label class="label">
-          <span class="label-text">Enter your email address</span>
+          <span class="label-text text-white">Enter your email address</span>
         </label>
-        <div class="join">
-          <input type="text" placeholder="username@site.com" class="input input-bordered join-item" />
+        <div class="join flex place-items-center">
+          <input type="text" placeholder="username@site.com" class="input join-item flex-1" />
           <button class="btn btn-primary join-item">Subscribe</button>
         </div>
       </fieldset>
