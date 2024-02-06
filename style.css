@@ -1,0 +1,13 @@
+span{
+    opacity: 0;
+   
+    transition: all 0.5s ease-in-out;
+    transform: translateY(90px);
+    display: inline-block;
+}
+span.fade{
+    opacity: 1;
+    transform: translateY(0px);
+    color: black;
+    mix-blend-mode: multiply;
+}
